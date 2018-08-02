@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/quiz.css">
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton|Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet"> 
+
+
+    
+    <input type="file" id="openfile" />
+    <pre id="contents"></pre>
+    <script type="text/javascript">
+  
+    </script>
+
+</head>
+    <body onload="makegrey(); msg('1'); notnext(); disable_clear_quiz(); disable_csv_file()">
+       
+        
+        <div class="zero">
+            <div class="zero_one">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="quiz.html">Quiz</a></li></br>
+                </ul>
+            <!--zero_one--></div>
+            <div class="zero_two">
+            <!--zero_two--></div>
+        
+        <!zero></div>
+        <div class="one"><h1>Quiz</h1>
+           <h5>Test yourself on common words in other languages.*</h5>
+            <p class="one_small">*German only. Check back for other language quizzes.</p>
+            <!--one--></div>
+        
+        <div class="parent_2-3">
+            <div class="two">
+           
+            </div>
+            </div>
+            <div id="output">
+	    </div>
+            <label for="csvFileInput" id="csv-file"> <strong>CSV File:</strong>
+	          </label>
+	          <input type="file" id="csvFileInput" onchange="handleFiles(this.files)"
+	          accept=".csv">
+    <button id="sq" autofocus="autofocus" style="color:green" onclick="msg('0')">Start Quiz</button></br></br>
+           
+            <label for="art">Article</label>
+            <input type="text" name="art" id="article" size="5" readonly="readonly" maxlength="3" /></br>
+            <label for="word">Word - </label>
+            <input type="text" name="word" id="show_word" size="80" readonly="readonly" /></br></br>
+            <label for="answerA">Answer A:</label>
+            <input type="text" name="AnsA" id="answerA" size="40" readonly="readonly" /></br></br>
+            <label for="answerB">Answer B:</label>
+            <input type="text" name="AnsB" id="answerB" size="40" readonly="readonly" /></br></br>
+            <label for="answerC">Answer C:</label>
+            <input type="text" name="AnsC" id="answerC" size="40" readonly="readonly" /></br></br>
+            <label for="answerD">Answer D:</label>
+            <input type="text" name="AnsD" id="answerD" size="40"  /></br></br>
+            
+
+            <!--two--></div>
+            <!--parent_2-3--></div>
+        <div class="four">
+        <div class="four">
+            <form>
+            A: 
+            <input type="radio" name="ABCD" value="" id="radA" checked="checked"> &nbsp&nbsp&nbsp;
+            B: 
+            <input type="radio" name="ABCD" value="" id="radB"> &nbsp&nbsp&nbsp;
+            C: 
+            <input type="radio" name="ABCD" value="" id="radC"> &nbsp&nbsp&nbsp;
+            D: 
+            <input type="radio" name="ABCD" value="" id="radD"> &nbsp&nbsp&nbsp;
+
+            </form>
+            <!--four--></div>
+        <div class="five">
+            <button id="next" autofocus="autofocus" style="color:blue" onclick="msg('2')">Next</button>&nbsp&nbsp&nbsp;
+            <label for="scr">Score</label>
+            <input type="text" name="myscore" id="score" size="2" readonly="readonly" maxlength="2" /> 
+            &nbsp&nbsp&nbsp;
+            <label for="rightans">Right</label>
+            <input type="text" id="rightans" size="2" readonly="readonly" maxlength="2" />
+            &nbsp&nbsp&nbsp;
+            <label for="wrongans">Wrong</label>
+            <input type="text" id="wrongans" size="2" readonly="readonly" maxlength="2" />
+            
+            </br></br>
+            <button id="check" autofocus="autofocus" style="color:green" onclick="checkans()">Check Answer</button></br></br>
+            <input type="text" id="result" size="40" readonly="readonly" /></br></br>
+            <button value="click" id="cq" onclick="msg('1')">Clear Quiz</button>
+            <button value="click" onclick="msg('3')" style="color:red">Restart Quiz</button>
+            <!--five--></div>
+        
+        <script type="text/javascript" src="js/read-csv.js"></script>
+    </body>
+
+</html>

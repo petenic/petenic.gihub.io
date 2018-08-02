@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton|Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet"> 
+   
+</head>
+    <script type="text/javascript">
+    function getdata() {
+        if(document.getElementById("con_name").value == ""){
+            nodata(); 
+            exit();
+           }
+        if(document.getElementById("con_add1").value == ""){
+            nodata();
+            exit();
+           }
+        if(document.getElementById("con_state").value == ""){
+           nodata(); 
+           exit();
+           }
+        if(document.getElementById("con_zip").value == ""){
+           nodata(); 
+           exit();
+           }
+        if(document.getElementById("con_email").value == ""){
+           nodata(); 
+           exit();
+           }
+        if(document.getElementById("con_phone").value == ""){
+           nodata(); 
+           exit();
+           }
+        
+            document.getElementById("con_name").value = "";
+            document.getElementById("con_add1").value = "";
+            document.getElementById("con_add2").value = "";
+            document.getElementById("con_state").value = "";
+            document.getElementById("con_zip").value = "";
+            document.getElementById("con_email").value = "";
+            document.getElementById("con_phone").value = "";
+            document.getElementById("con_comments").value = "";
+            alert("Data sent!")        
+    }
+     function nodata() {
+        alert("Only Address 2 and Comments may be blank.")
+    }
+    
+    </script>
+    <body onload="alert('This is the About Us page)">
+        <div class="zero">
+            <div class="zero_one">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="quiz.html">Quiz</a></li></br>
+                </ul>
+            <!--zero_one--></div>
+        
+           <div class="zero_two">
+            <!--zero_two--></div>
+        
+        <!zero></div>
+    
+    <div class="one">
+        <h1>CONTACT</br>ACME TRAVEL AGENCY</h1>
+            <!--one--></div>      
+        
+        <div class="parent_2-3">
+            <div class="two">
+            <h3>ACME Travel Agency has been your trusted travel agent since  1950. Tour the world with ACME.</h3>                
+            <p>ACME Travel Agency, Inc.</p>
+            <p>555 1/2 5th Avenue</p>
+            <p>New York, NY 10017</p>
+            <p>(212) 555-1212</p>
+            
+            <!--two--></div>       
+        <!--parent_2-3--></div>
+
+        <div class="four">
+            <p>Please send us your information:</p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="con_name" size="40" maxlength="40"/></br></br>
+            <label for="add1">Address 1:</label>
+            <input type="text" name="add1" id="con_add1" size="40" maxlength="40" /></br></br>
+            <label for="add2">Address 2:</label>
+            <input type="text" name="add2" id="con_add2" size="40" maxlength="40"/></br></br>
+            <label for="state">State:</label>
+            <input type="text" name="state" id="con_state" size="20" maxlength="20"/>
+            <label for="zip">Zip:</label>
+            <input type="text" name="zip" id="con_zip" size="10" maxlength="10"/></br></br>
+            <label for="email">email:</label>
+            <input type="text" name="email" id="con_email" size="40" maxlength="40" /></br></br>
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="con_phone" size="40" maxlength="20" /></br></br>
+            <label for="comments">Comments:</label></br>
+            <textarea rows="4" cols="40" id="con_comments"></textarea></br></br>
+            <button id="submit" autofocus="autofocus" style="color:green" onclick="getdata()">Submit</button>
+        <!--four--></div>
+        
+    </body>
+
+</html>
